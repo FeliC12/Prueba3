@@ -1,0 +1,49 @@
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1>Bienvenido a Patitas Felices</h1>
+      <p>Inicia sesión para continuar</p>
+    </div>
+
+    <!--Loging-->
+    <div class="login-form ion-padding">
+      <form [formGroup]="formularioLogin">
+        <div class="form-input">
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-item>
+            <ion-label position="floating">Nombre de Usuario</ion-label>
+            <ion-input formControlName="nombreUser" type="text"></ion-input>
+          </ion-item>
+        </div>
+        <div class="form-input">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input formControlName="passwordUser" type="password"></ion-input>
+          </ion-item>
+        </div>
+      </form>
+      <!--fin del login-->
+      <div class="action-buttons ion-padding">
+        <ion-button size="large" class="login-button" (click)="ingresar()">Iniciar sesión</ion-button>
+        <p>¿Olvidaste la contraseña?</p>
+        <ion-button class="signup-button" size="large" fill="outline" routerLink='../registro'>Registrarse</ion-button>
+      </div>
+     
+         <!--Loguearse mediandte google-->
+      <div class="social-login-buttons ion-padding">
+        <ion-button size="large" (click)="loginWithGoogle()">
+          <ion-icon name="logo-google"></ion-icon>
+          Iniciar sesión con Google
+        </ion-button>
+      
+         <!--Loguearse mediande Facebook-->
+        <ion-button size="large" (click)="loginWithFacebook()">
+          <ion-icon name="logo-facebook"></ion-icon>
+          Iniciar sesión con Facebook
+          
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <br>
+  <ion-card-header>
+    <ion-card-title>Registrar Mascota</ion-card-title>
+  </ion-card-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/inicio"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+  <br>
+  <ion-item>
+    <ion-label position="stacked">Ingrese el nombre de usuario</ion-label>
+    <ion-input [(ngModel)]="nombreUsuario" type="text"></ion-input>
+    <ion-label position="stacked">Ingrese el nombre de la mascota</ion-label>
+    <ion-input [(ngModel)]="nombreMascota" type="text"></ion-input>
+  </ion-item>
+
+  <!-- Seleccion de atencion -->
+
+  <ion-item>
+    <ion-label>Seleccione una opción</ion-label>
+    <ion-select [(ngModel)]="opcionSeleccionada">
+      <ion-select-option value="atencion-mascota">Atención a mascota</ion-select-option>
+      <ion-select-option value="vacuna-mascota">Vacuna para tu mascota</ion-select-option>
+      <ion-select-option value="diagnosis-tratamientos">Diagnosis y tratamientos clínicos</ion-select-option>
+      <ion-select-option value="venta-productos">Venta de productos</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button class="signup-button" size="large" fill="outline" (click)="acceptButtonClicked()">Aceptar</ion-button>
+
+  <ion-button class="signup-button" size="large" fill="outline" routerLink='../inicio'>Eliminar</ion-button>
+</ion-content>
+

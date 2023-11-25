@@ -1,0 +1,31 @@
+ion-content {
+  padding: 20px;
+}
+ion-card {
+  margin-bottom: 20px;
+}
+ion-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: violet;
+}
+
+ion-card-subtitle {
+  color: blue
+  ;
+}
+
+ion-list {
+  margin-bottom: 20px;
+}
+ion-item {
+  display: flex;
+  align-items: center;
+  ion-icon {
+    margin-right: 10px;
+  }
+}
+ion-fab-button {
+  --background: #3498db;
+  --color: #fff;
+}

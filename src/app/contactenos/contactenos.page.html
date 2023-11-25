@@ -1,0 +1,64 @@
+<!-- app.component.html -->
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <!-- Contenido -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Contacto Patitas Felices!</ion-card-title>
+    </ion-card-header>
+
+    
+    <ion-card-content>
+      <p>Para consultas respecto a pedidos o dudas, rellena este formulario y te escribiremos en la brevedad.</p>
+
+      <form>
+        <ion-item>
+          <ion-label position="floating">Su nombre</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Motivo de contacto</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Fecha de compra</ion-label>
+          <ion-input type="date"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Número de compra</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Asunto</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Información adicional</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+
+        <ion-button expand="full" color="primary">Enviar</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

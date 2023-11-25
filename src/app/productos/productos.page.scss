@@ -1,0 +1,31 @@
+ion-content {
+    padding: 20px;
+  }
+
+  ion-card {
+    margin-bottom: 20px;
+    --background: #041951; // Color de fondo de la tarjeta
+  }
+  
+ion-card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #022CEE; // Color del texto del título
+  }
+  ion-card-content {
+    ion-img {
+      width: 100%; // Asegura que la imagen ocupe el ancho completo del contenedor
+      height: 200px; // Altura fija para las imágenes
+      object-fit: cover; // Ajusta el tamaño de la imagen para cubrir el contenedor
+      margin-bottom: 10px;
+    }
+}
+p {
+    color: #C4E7E3; // Color del texto del contenido
+  }
+
+  ion-button {
+    --background: #3498db; // Color de fondo del botón
+    --color: #fff; // Color del texto del botón
+    margin-top: 10px;
+  }

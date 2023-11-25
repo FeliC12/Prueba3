@@ -1,0 +1,91 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Patitas Felices - Veterinaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.ionicframework.com/5.6.14/js/ionic.bundle.js"></script>
+</head>
+
+<body>
+  <ion-app>
+    <!-- Menú desplegable -->
+    <ion-menu side="end" content-id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menú</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <!-- Contenido del menú -->
+        <ion-list>
+          <ion-item routerLink="/agregar">
+            <ion-label>Agregar</ion-label>
+          </ion-item>
+          <ion-item routerLink="/productos">
+            <ion-label>Productos</ion-label>
+          </ion-item>
+          <ion-item routerLink="/contactenos">
+            <ion-label>Contactenos</ion-label>
+          </ion-item>
+          <ion-item routerLink="/usuarios">
+            <ion-label>API Rick y Morty</ion-label>
+          </ion-item>
+          <!-- Agrega más elementos de menú según tus necesidades -->
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <!-- Contenido principal -->
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+
+    <ion-header>
+      <ion-toolbar color="primary">
+        <!-- Botón para abrir el menú desplegable -->
+        <ion-buttons slot="start">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Patitas Felices - Veterinaria</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Bienvenido a Patitas Felices</ion-card-title>
+          <ion-card-subtitle>¡Cuidando a tus mascotas como se merecen!</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          En Patitas Felices nos preocupamos por la salud y felicidad de tus mascotas. Ofrecemos una amplia gama de servicios veterinarios para mantener a tus peludos amigos sanos y felices.
+        </ion-card-content>
+      </ion-card>
+
+      <ion-list>
+        <!-- Información de contacto -->
+        <!-- ... -->
+      </ion-list>
+      
+      <!-- Botón flotante "+" -->
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button routerLink="/agregar"> <!-- Reemplaza 'nuevo-animal' con tu ruta deseada -->
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+      <ion-list>
+        <ion-item>
+          <ion-icon name="location"></ion-icon>
+          Dirección: San Bernardo, Santiago, Chile
+        </ion-item>
+        <ion-item>
+          <ion-icon name="call"></ion-icon>
+          Teléfono: +1234567890
+        </ion-item>
+        <ion-item>
+          <ion-icon name="mail"></ion-icon>
+          Correo: info@patitasfelicesveterinaria.com
+        </ion-item>
+      </ion-list>
+
+    </ion-content>
+  </ion-app>
+</body>
+
